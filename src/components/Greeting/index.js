@@ -6,7 +6,7 @@ const Greeting = () => {
    const user = JSON.parse(localStorage.getItem('token'))
     return (
         <div className="greeting">
-            <img className="user-image" src={man} alt="user-image" />
+            <img className="user-image" src={man} alt="user" />
             <div>
               <span>Hello,</span>
               <h1 className="username">{user.username}</h1>
