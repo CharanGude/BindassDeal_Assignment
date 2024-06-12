@@ -1,0 +1,115 @@
+.list-item{
+    padding:20px 30px;
+    border-radius:20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 10);
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.list-item .icon{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.list-item .icons-container{
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-container,
+.delete-container{
+    display: flex;
+    margin: 5px;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.edit-container:hover,
+.delete-container:hover{
+    cursor: pointer;
+    background-color: #e1dfdf;
+}
+
+.fullscreen-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 20px;
+    border-radius: 5px;
+    height: 80vh;
+    max-width: 80%;
+    max-height: auto;
+    overflow-y: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .popup-content .close-icon{
+    cursor: pointer;
+    text-align: end;
+  }
+
+  .popup-content .input-label{
+    height: 30px;
+  }
+
+  .popup-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .popup-btn:hover {
+    background-color: #45a049;
+    padding: 30px 40px;
+  }
+
+@media (max-width: 768px) {
+  .popup-content{
+    width: 100%;
+    height: 100%;
+  }
+
+  .popup-btn{
+    padding: 10px;
+  }
+
+  .popup-btn:hover{
+    padding: 10px;
+  }
+
+  .list-item{
+    font-size: 14px;
+  }
+
+  .list-item .icon{
+    margin-right: 2px;
+  }
+}

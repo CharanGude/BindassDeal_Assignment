@@ -1,0 +1,20 @@
+.not-found-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-found-container .back-to-home{
+    padding: 10px 30px;
+    color: white;
+    border: none;
+    background-color: #55a9e1;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.not-found-container .back-to-home:hover{
+    background-color: #2492dc;
+    cursor: pointer;
+}
